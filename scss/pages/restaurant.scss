@@ -156,8 +156,8 @@
                     transform: translateY(-50%);
                     
                     background-clip: text;
-                    --webkit-background-clip: none;
-                    
+                    -webkit-background-clip: text;
+                    color: transparent;
                     transition: all 200ms ease-in-out;
                     background-image: linear-gradient(to bottom, rgb(220, 110, 218, 1)
                     11%, rgb(170, 93, 219, 1) 83.4%);
@@ -369,7 +369,7 @@
             margin: 0;
             width: 100%;
             .btn-commande {
-                
+
         @media screen and (min-width: 1440px)   {
             margin: 0;
         }
