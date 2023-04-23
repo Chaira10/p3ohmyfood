@@ -1,0 +1,57 @@
+@import '../utils/_colors.scss';
+
+nav {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px $dark;
+    width: 100vw;
+    position: relative;
+    ul {
+        margin: 0%;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        li {
+            list-style: none;
+            color: black;
+            :hover {
+                color: black;
+            }
+        }
+    }
+    .back-link {
+        transform: translateY(25%) translateX(15%);
+        font-size: 1.5rem;
+        &:hover {
+            // transform: scale(1.01);
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px)   {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+        @media screen and (min-width: 1440px)   {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            
+        }
+    }
+    .link-img {
+        list-style: none;
+        width: 50%;
+        margin: 0%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transform: translateX(35%);
+    .nav-logo {
+        width: 100%;
+    }}
+
+}
