@@ -882,12 +882,10 @@ footer p {
   width: 80vw;
   margin-bottom: 35px;
   border-radius: 20px;
-  position: relative;
 }
 .restaurant .card-body-restaurant .img-restaurant {
   display: flex;
   border-radius: 20px 20px 0 0;
-  position: relative;
   max-width: 95%;
   object-fit: cover;
 }
@@ -908,7 +906,6 @@ footer p {
   height: 168px;
   object-fit: cover;
   max-width: 95%;
-  position: relative;
   border-radius: 20px 20px 0 0;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -927,10 +924,14 @@ footer p {
     height: 275px;
   }
 }
+.restaurant .card-body-restaurant .nouveau {
+  position: relative;
+}
 .restaurant .card-body-restaurant #new-btn {
   display: flex;
   position: absolute;
-  transform: translateY(-660%) translateX(220%);
+  top: 5%;
+  right: 7% !important;
   background-color: #99E2D0;
   border: none;
   color: #0A8C6D;
@@ -940,23 +941,27 @@ footer p {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant .card-body-restaurant #new-btn {
-    transform: translateY(-1200%) translateX(500%);
+    top: 5%;
+    right: 8%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .restaurant .card-body-restaurant #new-btn {
-    transform: translateY(-600%) translateX(330%);
+    top: 5%;
+    right: 8%;
   }
 }
 @media screen and (min-width: 1440px) {
   .restaurant .card-body-restaurant #new-btn {
-    transform: translateY(-800%) translateX(500%);
+    top: 5%;
+    right: 8%;
   }
 }
 .restaurant .card-body-restaurant #new-btn1 {
   display: flex;
   position: absolute;
-  transform: translateY(-500%) translateX(220%);
+  top: 5%;
+  right: 8%;
   background-color: #99E2D0;
   border: none;
   color: #0A8C6D;
@@ -966,17 +971,20 @@ footer p {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant .card-body-restaurant #new-btn1 {
-    transform: translateY(-1200%) translateX(500%);
+    top: 5%;
+    right: 8%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .restaurant .card-body-restaurant #new-btn1 {
-    transform: translateY(-600%) translateX(330%);
+    top: 5%;
+    right: 8%;
   }
 }
 @media screen and (min-width: 1440px) {
   .restaurant .card-body-restaurant #new-btn1 {
-    transform: translateY(-800%) translateX(500%);
+    top: 5%;
+    right: 8%;
   }
 }
 .restaurant .card-body-restaurant .card-text {
