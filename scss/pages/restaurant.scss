@@ -119,6 +119,7 @@
                 align-items: center;
                 text-align: start;
                 position: relative;
+                // font-size: large;
                 // padding-left: 70px;
                 &::before {
                     display: inline-block;
@@ -131,14 +132,21 @@
                     content: "\f004";
                     font-size: 1.5rem;
                     position: absolute;
-                    right: 20px;
-                    top: 55px;
+                    left: 85%;
+                    top: 60px;
                     transform: translateY(-50%);
                     color: inherit;
                     background-clip: text;
                     --webkit-background-clip: text;
                     opacity: 1;
                     transition: all 200ms ease-in-out;
+                    @media screen and (min-width: 768px)  {
+                        left: 69%;
+                    }
+                    @media screen and (min-width: 1440px)    {
+                        top: 65%;
+                    }
+
                 }
                 &::after {
                     display: inline-block;
@@ -151,8 +159,8 @@
                     content: "\f004";
                     font-size: 1.5rem;
                     position: absolute;
-                    right: 20px;
-                    top: 55px;
+                    left: 85%;
+                    top: 60px;
                     transform: translateY(-50%);
                     
                     background-clip: text;
@@ -164,6 +172,12 @@
                     opacity: 0;
                     color: transparent;
                     font-weight: 900;
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        left: 69%;
+                    }
+                    @media screen and (min-width: 1440px)    {
+                        top: 65%;
+                    }
                 }
                 &:hover::after {
                     opacity: 1;
@@ -203,15 +217,17 @@
             width: 100%;
             padding: 30px 5px 0 10px;
             font-family: 'Shrikhand', cursive;
-            font-size: 1.2em;
+            font-size: 25px;
             // padding-left: 15px;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            // justify-content: center;
+            // align-items: center;
+            text-align: start;
 
-            @media screen and (min-width: 1024px) and (max-width: 1439px) {
+            @media screen and (min-width: 768px)  {
                 // transform: translateX(35%);
             text-align: center;
+                        justify-content: center;
+            align-items: center;
 
             }
             @media screen and (min-width: 1440px)   {
@@ -323,7 +339,16 @@
                     margin-left: auto;
                     font-weight: 900;
                     padding-right: 7px;
-                    align-items: flex-end;
+                    // align-items: flex-end;
+                    // justify-content: flex-end;
+                    // position: relative;
+                    h4 {
+                    // bottom: 5px;
+                    // position: absolute;
+                    margin: 40px 0 0 0;
+                    vertical-align: middle;
+
+                    }
                 }
     
                 .card-check-box {
@@ -368,8 +393,12 @@
             padding-bottom: 30px;
             margin: 0;
             width: 100%;
-            .btn-commande {
-
+            #btn-commande {
+                padding: 20px 60px 20px 60px;
+                margin: auto;
+                font-weight: 600;
+                font-size: large;
+                // width: 100%;
         @media screen and (min-width: 1440px)   {
             margin: 0;
         }
