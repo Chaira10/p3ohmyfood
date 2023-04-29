@@ -715,10 +715,6 @@ footer p i {
     transform: scale(0);
   }
 }
-* {
-  box-sizing: border-box !important;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   margin: 0%;
