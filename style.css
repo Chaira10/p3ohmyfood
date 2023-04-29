@@ -910,9 +910,8 @@ footer p i {
   .restaurant .card-row {
     display: flex;
     flex-direction: row !important;
-    width: 100%;
+    width: 90%;
     margin-bottom: 20px;
-    transform: translateX(9%);
   }
 }
 .restaurant .card-body-restaurant {
