@@ -780,7 +780,9 @@ footer p i {
 
 .card-fonctionnement {
   width: 91%;
-  padding-left: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card-fonctionnement {
@@ -805,7 +807,8 @@ footer p i {
     align-items: center;
     justify-content: center;
     width: 99%;
-    gap: 15px;
+    gap: 1%;
+    margin-left: 0px;
   }
 }
 
