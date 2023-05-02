@@ -841,7 +841,7 @@ footer p i {
   margin-left: 5px;
   margin-top: 7px;
 }
-.card-body-fonctionnement .number {
+.card-body-fonctionnement .circle {
   width: 13px;
   height: 13px;
   background-color: #9356DC;
@@ -855,12 +855,13 @@ footer p i {
   justify-content: center;
   text-align: center;
 }
-.card-body-fonctionnement h3 {
+.card-body-fonctionnement .circle .number {
   align-items: center;
   justify-content: center;
   text-align: center;
   position: absolute;
-  top: -10px;
+  top: 25%;
+  right: 35%;
 }
 
 .restaurant {
@@ -994,6 +995,8 @@ footer p i {
   font-size: 1em;
   padding: 7px 13px 7px 13px;
   font-weight: bold;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant .card-body-restaurant #new-btn {
@@ -1024,6 +1027,8 @@ footer p i {
   font-size: 1em;
   padding: 7px 13px 7px 13px;
   font-weight: bold;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant .card-body-restaurant #new-btn1 {
