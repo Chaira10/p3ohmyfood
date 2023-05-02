@@ -1206,7 +1206,6 @@ footer p i {
   width: 100%;
   height: 100%;
   transform: translateY(-50px);
-  padding-top: -50px;
   margin-bottom: -200px;
   border-radius: 50px 50px 0 0;
 }
@@ -1588,7 +1587,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box !important;
-  overflow-x: none !important;
+  overflow-x: hidden !important;
   margin: 0;
   width: 100vw;
   height: 100%;
