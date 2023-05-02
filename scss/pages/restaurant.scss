@@ -121,67 +121,112 @@
                 position: relative;
                 // font-size: large;
                 // padding-left: 70px;
-                &::before {
-                    display: inline-block;
-                    font-style: normal;
-                    font-variant: normal;
-                    text-rendering: auto;
-                    --webkit-font-smoothing: antialiased;
-                    font-family: 'Font Awesome 5 Free';
-                    font-weight: 400;
-                    content: "\f004";
-                    font-size: 1.5rem;
+                // &::before {
+                //     display: inline-block;
+                //     font-style: normal;
+                //     font-variant: normal;
+                //     text-rendering: auto;
+                //     --webkit-font-smoothing: antialiased;
+                //     font-family: 'Font Awesome 5 Free';
+                //     font-weight: 400;
+                //     content: "\f004";
+                //     font-size: 1.5rem;
+                //     position: absolute;
+                //     left: 85%;
+                //     top: 60px;
+                //     transform: translateY(-50%);
+                //     color: inherit;
+                //     background-clip: text;
+                //     --webkit-background-clip: text;
+                //     opacity: 1;
+                //     transition: all 200ms ease-in-out;
+                //     @media screen and (min-width: 768px)  {
+                //         left: 69%;
+                //     }
+                //     @media screen and (min-width: 1440px)    {
+                //         top: 65%;
+                //     }
+
+                // }
+                // &::after {
+                //     display: inline-block;
+                //     font-style: normal;
+                //     font-variant: normal;
+                //     text-rendering: auto;
+                //     --webkit-font-smoothing: antialiased;
+                //     font-family: 'Font Awesome 5 Free';
+                    
+                //     content: "\f004";
+                //     font-size: 1.5rem;
+                //     position: absolute;
+                //     left: 85%;
+                //     top: 60px;
+                //     transform: translateY(-50%);
+                    
+                //     background-clip: text;
+                //     -webkit-background-clip: text;
+                //     color: transparent;
+                //     transition: all 200ms ease-in-out;
+                //     background-image: linear-gradient(to bottom, rgb(220, 110, 218, 1)
+                //     11%, rgb(170, 93, 219, 1) 83.4%);
+                //     opacity: 0;
+                //     color: transparent;
+                //     font-weight: 900;
+                //     @media screen and (min-width: 768px) and (max-width: 1023px) {
+                //         left: 69%;
+                //     }
+                //     @media screen and (min-width: 1440px)    {
+                //         top: 65%;
+                //     }
+                // }
+                // &:hover::after {
+                //     opacity: 1;
+                //     transform: translateY(-50%) scale(1.1);
+                // }
+                i {
+                    font-size: 32px;
                     position: absolute;
-                    left: 85%;
-                    top: 60px;
-                    transform: translateY(-50%);
-                    color: inherit;
-                    background-clip: text;
-                    --webkit-background-clip: text;
-                    opacity: 1;
-                    transition: all 200ms ease-in-out;
-                    @media screen and (min-width: 768px)  {
-                        left: 69%;
-                    }
-                    @media screen and (min-width: 1440px)    {
-                        top: 65%;
-                    }
+                    right: 13%;
+                    top: 47%;
+                @media screen and (min-width: 375px) and (max-width: 424px)   {
+                    right: 23%;
+                    top: 47%;
+                }
+                @media screen and (min-width: 425px) and (max-width: 500px)   {
+                    right: 33%;
+                    top: 47%;
+                }
+                @media screen and (min-width: 501px) and (max-width: 767px)   {
+                    right:47%;
+                    top: 47%;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1023px)   {
+                    right: 27%;
+                    top: 47%;
+                }
+                @media screen and (min-width: 1024px) and (max-width: 1439px)   {
+                    right:25%;
+                    top: 47%;
+                }
+                @media screen and (min-width: 1440px)    {
+                    right:31%;
+                    top: 47%;
+                }
 
                 }
-                &::after {
-                    display: inline-block;
-                    font-style: normal;
-                    font-variant: normal;
-                    text-rendering: auto;
-                    --webkit-font-smoothing: antialiased;
-                    font-family: 'Font Awesome 5 Free';
-                    
-                    content: "\f004";
-                    font-size: 1.5rem;
-                    position: absolute;
-                    left: 85%;
-                    top: 60px;
-                    transform: translateY(-50%);
-                    
+                .fa-solid {
+                    color: transparent;
+                    background-image: linear-gradient(to top, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1));
                     background-clip: text;
                     -webkit-background-clip: text;
-                    color: transparent;
-                    transition: all 200ms ease-in-out;
-                    background-image: linear-gradient(to bottom, rgb(220, 110, 218, 1)
-                    11%, rgb(170, 93, 219, 1) 83.4%);
                     opacity: 0;
-                    color: transparent;
-                    font-weight: 900;
-                    @media screen and (min-width: 768px) and (max-width: 1023px) {
-                        left: 69%;
-                    }
-                    @media screen and (min-width: 1440px)    {
-                        top: 65%;
-                    }
+                    transition: all 200ms ease-in-out;
+    
                 }
-                &:hover::after {
+                &:hover .fa-solid {
                     opacity: 1;
-                    transform: translateY(-50%) scale(1.1);
+                    transform: scale(1.1);
+    
                 }
                 @media screen and (min-width: 768px) and (max-width: 1023px)   {
                     display: flex;

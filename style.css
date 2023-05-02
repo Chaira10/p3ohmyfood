@@ -1232,71 +1232,59 @@ footer p i {
   text-align: start;
   position: relative;
 }
-.card-title .row-title::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  --webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  content: "\f004";
-  font-size: 1.5rem;
+.card-title .row-title i {
+  font-size: 32px;
   position: absolute;
-  left: 85%;
-  top: 60px;
-  transform: translateY(-50%);
-  color: inherit;
-  background-clip: text;
-  --webkit-background-clip: text;
-  opacity: 1;
-  transition: all 200ms ease-in-out;
+  right: 13%;
+  top: 47%;
 }
-@media screen and (min-width: 768px) {
-  .card-title .row-title::before {
-    left: 69%;
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .card-title .row-title i {
+    right: 23%;
+    top: 47%;
   }
 }
-@media screen and (min-width: 1440px) {
-  .card-title .row-title::before {
-    top: 65%;
+@media screen and (min-width: 425px) and (max-width: 500px) {
+  .card-title .row-title i {
+    right: 33%;
+    top: 47%;
   }
 }
-.card-title .row-title::after {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  --webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  content: "\f004";
-  font-size: 1.5rem;
-  position: absolute;
-  left: 85%;
-  top: 60px;
-  transform: translateY(-50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 200ms ease-in-out;
-  background-image: linear-gradient(to bottom, rgb(220, 110, 218) 11%, rgb(170, 93, 219) 83.4%);
-  opacity: 0;
-  color: transparent;
-  font-weight: 900;
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .card-title .row-title i {
+    right: 47%;
+    top: 47%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .card-title .row-title::after {
-    left: 69%;
+  .card-title .row-title i {
+    right: 27%;
+    top: 47%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .card-title .row-title i {
+    right: 25%;
+    top: 47%;
   }
 }
 @media screen and (min-width: 1440px) {
-  .card-title .row-title::after {
-    top: 65%;
+  .card-title .row-title i {
+    right: 31%;
+    top: 47%;
   }
 }
-.card-title .row-title:hover::after {
+.card-title .row-title .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.card-title .row-title:hover .fa-solid {
   opacity: 1;
-  transform: translateY(-50%) scale(1.1);
+  transform: scale(1.1);
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card-title .row-title {
