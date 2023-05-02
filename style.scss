@@ -49,8 +49,7 @@ body {
 .btn {
     align-items: center;
     appearance: none;
-    background-image: linear-gradient(to bottom, rgb(220, 110, 218, 1)
-11%, rgb(170, 93, 219, 1) 83.4%);
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1));
     background-size: calc(100% + 20px) calc(100% + 20px);
     color: white;
     border: none;
@@ -72,6 +71,8 @@ body {
     transition: background-color .2s,background-position .2s;
     &:hover {
         transform: scale(1.1);
+        background-image: linear-gradient(to bottom, rgba(285, 121, 218, 1), rgba(169, 86, 220, 0.9));
+
     }
 }
 
