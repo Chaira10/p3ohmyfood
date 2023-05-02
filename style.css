@@ -577,7 +577,9 @@ nav ul li :hover {
   color: black;
 }
 nav .back-link {
-  transform: translateY(25%) translateX(15%);
+  position: absolute;
+  left: 10px;
+  top: 23px;
   font-size: 1.5rem;
 }
 nav .back-link a {
@@ -588,21 +590,21 @@ nav .back-link a {
   nav .back-link {
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 25px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   nav .back-link {
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 25px;
   }
 }
 @media screen and (min-width: 1440px) {
   nav .back-link {
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 25px;
   }
 }
 nav .link-logo {
