@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap");
 html, address,
 blockquote,
 body, dd, div,
@@ -546,6 +547,12 @@ template {
   display: none;
 }
 
+header {
+  font-family: "Shrikhand", cursive !important;
+  text-align: center;
+  align-items: center;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -597,16 +604,19 @@ nav .back-link a {
     top: 10px;
   }
 }
-nav .link-img {
+nav .link-logo {
   list-style: none;
-  width: 50%;
-  margin: 0%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transform: translateX(50%);
-}
-nav .link-img .nav-logo {
   width: 100%;
+  transform: translateY(25%);
+  height: 68px;
+  text-align: center;
+  align-items: center;
+}
+nav .link-logo .logo-text {
+  margin: 0;
+  font-size: 35px;
+  text-align: center;
+  align-items: center;
 }
 
 footer {

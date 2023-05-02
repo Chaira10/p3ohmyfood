@@ -1,5 +1,11 @@
 @import '../utils/_colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap');
 
+header {
+    font-family: 'Shrikhand', cursive !important;
+    text-align: center;
+    align-items: center;
+}
 nav {
     display: flex;
     justify-content: center;
@@ -16,6 +22,7 @@ nav {
         li {
             list-style: none;
             color: black;
+            
             :hover {
                 color: black;
             }
@@ -49,15 +56,29 @@ nav {
             
         }
     }
-    .link-img {
+    .link-logo {
         list-style: none;
-        width: 50%;
-        margin: 0%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        transform: translateX(50%);
-    .nav-logo {
         width: 100%;
-    }}
+        // margin: 0%;
+        // padding-top: 10%;
+        // padding-bottom: 30%;
+        transform: translateY(25%);
+        height: 68px;
+        text-align: center;
+        align-items: center;
+    // @media screen and (min-width: 768px)  and (max-width: 1023px) {
+
+    // }
+
+        & .logo-text{
+            margin: 0;
+        // padding-bottom: 30%;
+
+            font-size: 35px;
+            text-align: center;
+            align-items: center;
+
+        }
+}
 
 }
