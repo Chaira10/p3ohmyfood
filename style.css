@@ -1461,7 +1461,7 @@ footer p i {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu .card-body .card-body-title h2 {
+.menu .card-body .card-body-title h3 {
   border-bottom: none;
   padding: 15px 0 0 0;
   margin: 5px 0 5px 10px;
