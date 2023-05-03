@@ -5,11 +5,17 @@
   "name": "p3ohmyfood",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss ./style.css --use autoprefixer cssnano -o ./prefixed/style.min.css"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "browserslist": "last 4 versions"
 }
