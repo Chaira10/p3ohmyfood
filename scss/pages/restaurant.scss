@@ -13,25 +13,9 @@
 //     overflow-x: hidden;
     
 // }
-@keyframes check-box {
-    0% {
-        transform: rotate(-270deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
-}
 
-@keyframes menu-loader {
-    0% {
-        transform: translateY(50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
+
+
         .img-banniere {
             width: 100vw;
             height: 350px;
@@ -288,6 +272,16 @@
 
 
     }
+    @keyframes menu-loader {
+        0% {
+            transform: translateY(50%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
         
         .menu {
             padding: 0 0px 0px 0px;
@@ -325,29 +319,23 @@
                 border-bottom: 4px solid $tertiary;
                 width: 30px;
             }
+
+
             .card-body {
-                $delay-increment: 0.1s;
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 0 5px $dark;
+            margin: 0%;
+            margin-bottom: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            animation: menu-loader 2s  0.1s;
+            cursor: pointer;
 
-@for $i from 1 through 10 { // Vous pouvez changer la valeur de 3 en fonction du nombre de cartes que vous avez sur la page
-  .card-body:nth-of-type(#{$i}) {
-    animation-delay: #{($i - 1) * $delay-increment};
-  }
-}
-                display: flex;
-                flex-direction: row;
-                background-color: white;
-                width: 90%;
-                border-radius: 15px;
-                box-shadow: 0 0 5px $dark;
-                margin: 0%;
-                margin-bottom: 15px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                animation: menu-loader 2s $delay-increment;
-                cursor: pointer;
-
-                // animation: name duration timing-function delay iteration-count direction fill-mode;
                 @media screen and (min-width: 768px) and (max-width: 1023px)   {
                     width: 75%;
                 }
@@ -397,7 +385,7 @@
 
                     }
                 }
-    
+
                 .card-check-box {
                     display: flex;
                     align-items: center;
@@ -430,7 +418,14 @@
                     }
                 }
             }
-
+        }
+        @keyframes check-box {
+            0% {
+                transform: rotate(-270deg);
+            }
+            100% {
+                transform: rotate(0);
+            }
         }
 
         .commande {

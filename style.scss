@@ -50,13 +50,13 @@ body {
     align-items: center;
     appearance: none;
     background-image: linear-gradient(to top, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1));
-    background-size: calc(100% + 20px) calc(100% + 20px);
+    background-size: 100%;
     color: white;
     border: none;
     padding: 15px ;
     border-radius: 100px;
     border-width: 0;
-    box-shadow: none;
+    box-shadow: 3px 5px 5px rgba(139, 135, 135, 0.7);
     box-sizing: border-box;
     margin: auto;
     cursor: pointer;
@@ -70,8 +70,9 @@ body {
     text-decoration: none;
     transition: background-color .2s,background-position .2s;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         background-image: linear-gradient(to bottom, rgba(285, 121, 218, 1), rgba(169, 86, 220, 0.9));
+        box-shadow: 10px 13px 13px rgba(139, 135, 135, 0.7);
 
     }
 }

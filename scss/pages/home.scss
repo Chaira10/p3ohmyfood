@@ -1,13 +1,6 @@
 @import '../utils/colors';
 
-@keyframes removeloader {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
+
 
 
 .localisation {
@@ -70,7 +63,17 @@
         margin-right: 0%;
         font-size: 2em;
         padding-left: 15px;
+        @media screen and (min-width: 768px)  and (max-width: 1023px) {
+            margin-left: 30px;
+        }
+        @media screen and (min-width: 1023px)  and (max-width: 1439px) {
+            margin-left: 30px;
+        }
+        @media screen and (min-width: 1440px)  {
+            margin-left: 30px;
+        }
     }
+
 }
 
 .card-fonctionnement {
@@ -339,7 +342,6 @@
                 position: absolute;
                 right: 16px;
                 top: 17%;
-
             }
             .fa-solid {
                 color: transparent;
@@ -348,13 +350,12 @@
                 -webkit-background-clip: text;
                 opacity: 0;
                 transition: all 200ms ease-in-out;
-
             }
             &:hover .fa-solid {
                 opacity: 1;
                 transform: scale(1.1);
-
             }
+
         @media screen and (min-width: 768px)  and (max-width: 1023px) {
             margin-bottom: 20px;
         }
@@ -414,32 +415,36 @@
     animation-delay: 3s;
     animation-fill-mode: forwards;
     transform-origin: top;
-
-    
 }
-// Spinner parameters
-$color: $primary !default;
-$color_inner: $secondary !default;
-$size: 90px !default;
-$weight: 6px !default;
-$speed: .5s !default;
+
+@keyframes removeloader {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+
 
 .nk-spinner {
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  box-sizing: border-box;
-  width: $size;
-  height: $size;
-  text-indent: -9999em;
-  border: $weight solid $color;
-  border-left: $weight solid $color_inner;
-  border-right: $weight solid $tertiary;
-
-  border-radius: 50%;
-  animation: nk-spinner $speed infinite linear;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    box-sizing: border-box;
+    width: 90px;
+    height: 90px;
+    text-indent: -9999em;
+    border: 6px solid $primary;
+    border-left: 6px solid $secondary;
+    border-right: 6px solid $tertiary;
+    border-radius: 50%;
+    animation: nk-spinner .5s infinite linear;
 }
 
 @keyframes nk-spinner {
-  100% { transform: rotate(360deg) }
+    100% { 
+        transform: rotate(360deg) 
+    }
 }
