@@ -1,8 +1,6 @@
 @import '../utils/colors';
 
 
-
-
 .localisation {
     display: flex;
     height: 70px;
@@ -187,19 +185,17 @@
     .cards-restaurants {
         display: flex;
         flex-direction:column;
-        width: 97%;
-        margin-left: 5px;
+        width: 100%;
+        margin-left: 0px;
         justify-content: center;
         align-items: center;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     .card-row {
-    width: 97%;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: 768px)  and (max-width: 1023px) {
-        margin-left: 40px;
-        width: 95%;
-    }
     @media screen and (min-width: 1023px)  and (max-width: 1439px) {
         display: flex;
         flex-direction: row !important;
@@ -223,7 +219,7 @@
     .card-body-restaurant {
         text-decoration: none;
         color: #000000;
-        width: 80vw;
+        width: 90vw;
         margin-bottom: 35px;
         border-radius: 20px;
         .img-restaurant {
@@ -249,8 +245,6 @@
             border-radius: 20px 20px 0 0;
         @media screen and (min-width: 768px)  and (max-width: 1023px) {
             height: 401px;
-
-
         }
         @media screen and (min-width: 1024px)  and (max-width: 1439px) {
             height: 200px;
@@ -258,14 +252,11 @@
         }
     @media screen and (min-width: 1440px)  {
         height: 275px;
-
     }
         
         }
-
         .nouveau {
             position: relative;
-
         }
         #new-btn {
             display: flex;
@@ -283,18 +274,15 @@
         @media screen and (min-width: 768px)  and (max-width: 1023px) {
             top: 5%;
             right: 8%;
-
         }
 
     @media screen and (min-width: 1024px)  and (max-width: 1439px) {
         top: 5%;
         right: 8%;
-
     }
     @media screen and (min-width: 1440px) {
         top: 5%;
         right: 8%;
-
     }
 }
 
@@ -314,24 +302,18 @@
     @media screen and (min-width: 768px)  and (max-width: 1023px) {
         top: 5%;
         right: 8%;
-
     }
 
 @media screen and (min-width: 1024px)  and (max-width: 1439px) {
     top: 5%;
     right: 8%;
-
 }
 @media screen and (min-width: 1440px) {
     top: 5%;
     right: 8%;
-
 }
-
     }
-
-            
-
+        
         .card-text {
             position: relative;
             background-color: white;
@@ -359,18 +341,15 @@
         @media screen and (min-width: 768px)  and (max-width: 1023px) {
             margin-bottom: 20px;
         }
-
             h2 {
                 font-weight: 600;
                 margin: 0px 10px 10px 10px;
                 padding-top: 10px;
-
             }
             p {
                 margin: 5px 10px 10px 10px;
                 padding-bottom: 10px;
             }
-
         }
         .icon-hearth {
             position: absolute;
@@ -380,8 +359,6 @@
         }
         
     }
-
-
 }
 
 
@@ -390,14 +367,10 @@
     max-width: 100vw;
     margin:0;
     margin-bottom: 30px;
-
-
     @media screen and (min-width: 1440px)   {
         margin-left: auto;
         margin-right: auto;
         background-color: $bg-secondary;
-
-
     }
 }
 
@@ -415,6 +388,9 @@
     animation-delay: 3s;
     animation-fill-mode: forwards;
     transform-origin: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes removeloader {
@@ -426,21 +402,30 @@
     }
 }
 
-
-
 .nk-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 45%;
-    left: 45%;
+    top: 50%;
+    left: 39%;
     box-sizing: border-box;
     width: 90px;
     height: 90px;
-    text-indent: -9999em;
     border: 6px solid $primary;
     border-left: 6px solid $secondary;
     border-right: 6px solid $tertiary;
     border-radius: 50%;
     animation: nk-spinner .5s infinite linear;
+    @media screen and (min-width: 768px)  and (max-width: 1023px) {
+    left: 43%;
+    }
+    @media screen and (min-width: 1024px)  and (max-width: 1439px) {
+        left: 47%;
+        }
+        @media screen and (min-width: 1440px)   {
+            left: 50%;
+            }
 }
 
 @keyframes nk-spinner {

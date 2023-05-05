@@ -892,21 +892,17 @@ footer p i {
 .restaurant .cards-restaurants {
   display: flex;
   flex-direction: column;
-  width: 97%;
-  margin-left: 5px;
+  width: 100%;
+  margin-left: 0px;
   justify-content: center;
   align-items: center;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 .restaurant .card-row {
-  width: 97%;
+  width: 100%;
   justify-content: center;
   align-items: center;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .restaurant .card-row {
-    margin-left: 40px;
-    width: 95%;
-  }
 }
 @media screen and (min-width: 1023px) and (max-width: 1439px) {
   .restaurant .card-row {
@@ -933,7 +929,7 @@ footer p i {
 .restaurant .card-body-restaurant {
   text-decoration: none;
   color: #000000;
-  width: 80vw;
+  width: 90vw;
   margin-bottom: 35px;
   border-radius: 20px;
 }
@@ -1118,6 +1114,9 @@ footer p i {
   animation-delay: 3s;
   animation-fill-mode: forwards;
   transform-origin: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes removeloader {
@@ -1129,18 +1128,35 @@ footer p i {
   }
 }
 .nk-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 50%;
+  left: 39%;
   box-sizing: border-box;
   width: 90px;
   height: 90px;
-  text-indent: -9999em;
   border: 6px solid #9356DC;
   border-left: 6px solid #FF79DA;
   border-right: 6px solid #99E2D0;
   border-radius: 50%;
   animation: nk-spinner 0.5s infinite linear;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nk-spinner {
+    left: 43%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .nk-spinner {
+    left: 47%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nk-spinner {
+    left: 50%;
+  }
 }
 
 @keyframes nk-spinner {
@@ -1467,10 +1483,10 @@ footer p i {
   height: 23px;
   color: #99E2D0;
 }
-.menu .card-body:hover .card-check-box {
+.menu .card-body:active .card-check-box {
   margin-right: 0;
 }
-.menu .card-body:hover i {
+.menu .card-body:active i {
   animation: check-box 0.5s ease-in-out;
 }
 
