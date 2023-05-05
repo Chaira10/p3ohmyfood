@@ -307,13 +307,23 @@
             margin: 0;
             width: 100%;
             #btn-commande {
-                padding: 20px 60px 20px 60px;
+                width: 65%;
+                padding: 20px 60px 20px 60px !important;
                 margin: auto;
                 font-weight: 600;
-                font-size: large;
+                font-size: 21px;
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    width: 37%;
+                }
+                @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                    width: 37%;
+                }
         @media screen and (min-width: 1440px)   {
             margin: 0;
+            width: 31%;
+
         }
+
         }
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             margin: 0;

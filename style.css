@@ -1506,14 +1506,26 @@ footer p i {
   width: 100%;
 }
 .commande #btn-commande {
-  padding: 20px 60px 20px 60px;
+  width: 65%;
+  padding: 20px 60px 20px 60px !important;
   margin: auto;
   font-weight: 600;
-  font-size: large;
+  font-size: 21px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .commande #btn-commande {
+    width: 37%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .commande #btn-commande {
+    width: 37%;
+  }
 }
 @media screen and (min-width: 1440px) {
   .commande #btn-commande {
     margin: 0;
+    width: 31%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
