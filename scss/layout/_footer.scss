@@ -6,8 +6,6 @@ footer {
     padding: 120px 10px 10px 10px;
     max-width: 100vw;
     box-sizing: border-box !important;
-
-    // margin-top: -200px;
     h3 {
         font-family: 'Shrikhand', cursive;
         font-size: 1.5em;
@@ -18,28 +16,21 @@ footer {
             margin-right: 5px;
         }
     }
-
     
     @media screen and (min-width: 1024px) and (max-width: 1439px)  {
         display: flex;
-        // justify-content:end;
         flex-direction: row !important;
-        // transform: translateX(-50px);
-        // width: 100vw;
-        // margin-right: 15px;
         padding: 20px;
         margin-top: 151px;
         h3 {
             display:flex;
             order:5;
-            // margin: 40px 0px 15px 25px;
             padding-top: 15px;
             padding-left: 30px;
         }
         p:nth-of-type(1) {
             order: 0;
             margin: 40px 10px 0px 180px;
-            // padding-top: 20px;
         }
         p:nth-of-type(2) {
             order: 2;
@@ -56,25 +47,18 @@ footer {
     }
     @media screen and (min-width: 1440px)   {
         display: flex;
-        // justify-content:end;
         flex-direction: row !important;
-        // transform: translateX(-50px);
-        // width: 100vw;
-        // margin-right: 15px;
-        // padding:0;
         padding: 20px;
         margin-top: 151px;
         h3 {
             display:flex;
             order:5;
-            // margin: 40px 0px 15px 25px;
             padding-top: 15px;
             padding-left: 30px;
         }
         p:nth-of-type(1) {
             order: 0;
             margin: 40px 10px 0px 580px;
-            // padding-top: 20px;
         }
         p:nth-of-type(2) {
             order: 2;
@@ -89,9 +73,6 @@ footer {
             margin: 40px 0px 0px 5px;
         }
     }
-
-
-
 }
 
 #footer {
@@ -100,16 +81,12 @@ footer {
     }
     @media screen and (min-width: 1024px) and (max-width: 1439px)  {
         margin-top: 0;
-
     }
-
-    
 }
 
 .contact {
-     
-        text-decoration: none !important ;
-        color: white;
+    text-decoration: none !important ;
+    color: white;
     
 }
 

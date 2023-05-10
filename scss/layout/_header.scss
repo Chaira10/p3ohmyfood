@@ -29,14 +29,10 @@ nav {
         }
     }
     .back-link {
-        // transform: translateY(25%) translateX(15%);
         position: absolute;
         left: 10px;
         top: 23px;
         font-size: 1.5rem;
-        &:hover {
-            // transform: scale(1.01);
-        }
         a {
             text-decoration: none;
             color:black;
@@ -62,25 +58,15 @@ nav {
     .link-logo {
         list-style: none;
         width: 100%;
-        // margin: 0%;
-        // padding-top: 10%;
-        // padding-bottom: 30%;
         transform: translateY(25%);
         height: 68px;
         text-align: center;
         align-items: center;
-    // @media screen and (min-width: 768px)  and (max-width: 1023px) {
-
-    // }
-
         & .logo-text{
             margin: 0;
-        // padding-bottom: 30%;
-
             font-size: 35px;
             text-align: center;
             align-items: center;
-
         }
 }
 

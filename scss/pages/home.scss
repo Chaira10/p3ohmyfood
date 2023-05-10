@@ -13,7 +13,6 @@
     .icon-localisation {
         margin-right: 3%;
     }
-
     .input {
         background-color: $lightgrey;
         border: none;
@@ -71,7 +70,6 @@
             margin-left: 30px;
         }
     }
-
 }
 
 .card-fonctionnement {
@@ -79,8 +77,6 @@
     align-items: center;
     justify-content: center;
     margin-left: 5%;
-
-
     @media screen and (min-width: 768px)  and (max-width: 1023px) {
         margin-left: 21px;
     }
@@ -102,7 +98,6 @@
         gap: 1%;
         margin-left: 0px;
     }
-
 }
 
 .card-body-fonctionnement {
@@ -133,7 +128,6 @@
         margin-left: 5px;
         margin-top: 7px;
     }
-
     .circle {
         width: 13px;
         height: 13px;
@@ -179,8 +173,6 @@
         @media screen and (min-width: 1440px)  {
             margin-left: 30px;
         }
-
-
     }
     .cards-restaurants {
         display: flex;
@@ -214,7 +206,6 @@
         align-items: center;
         margin-left: 55px;
     }
-
     }
     .card-body-restaurant {
         text-decoration: none;
@@ -235,7 +226,6 @@
         height: 275px;
         width: 100%;
             }
-
         }
         .img-2{
             width: 100%;
@@ -250,10 +240,9 @@
             height: 200px;
             width: 100%;
         }
-    @media screen and (min-width: 1440px)  {
-        height: 275px;
-    }
-        
+        @media screen and (min-width: 1440px)  {
+            height: 275px;
+        }
         }
         .nouveau {
             position: relative;
@@ -275,16 +264,15 @@
             top: 5%;
             right: 8%;
         }
-
-    @media screen and (min-width: 1024px)  and (max-width: 1439px) {
-        top: 5%;
-        right: 8%;
+        @media screen and (min-width: 1024px)  and (max-width: 1439px) {
+            top: 5%;
+            right: 8%;
+        }
+        @media screen and (min-width: 1440px) {
+            top: 5%;
+            right: 8%;
+        }
     }
-    @media screen and (min-width: 1440px) {
-        top: 5%;
-        right: 8%;
-    }
-}
 
     #new-btn1 {
         display: flex;
@@ -303,17 +291,15 @@
         top: 5%;
         right: 8%;
     }
-
-@media screen and (min-width: 1024px)  and (max-width: 1439px) {
-    top: 5%;
-    right: 8%;
-}
-@media screen and (min-width: 1440px) {
-    top: 5%;
-    right: 8%;
-}
+    @media screen and (min-width: 1024px)  and (max-width: 1439px) {
+        top: 5%;
+        right: 8%;
     }
-        
+    @media screen and (min-width: 1440px) {
+        top: 5%;
+        right: 8%;
+    }
+    }
         .card-text {
             position: relative;
             background-color: white;
@@ -337,7 +323,6 @@
                 opacity: 1;
                 transform: scale(1.1);
             }
-
         @media screen and (min-width: 768px)  and (max-width: 1023px) {
             margin-bottom: 20px;
         }
@@ -360,8 +345,6 @@
         
     }
 }
-
-
 .bg-bottom {
     background-color: $bg-secondary;
     max-width: 100vw;

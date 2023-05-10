@@ -184,11 +184,9 @@
                 align-items: center;
             }
             @media screen and (min-width: 1440px)   {
-                // transform: translateX(15%) ;
                 margin-left: 23%;
                 justify-content: center;
                 align-items: center;
-                // padding-right: 30px;
             }
             .title-menu {
                 font-weight: 300;
@@ -318,12 +316,10 @@
                 @media screen and (min-width: 1024px) and (max-width: 1439px) {
                     width: 37%;
                 }
-        @media screen and (min-width: 1440px)   {
-            margin: 0;
-            width: 31%;
-
-        }
-
+                @media screen and (min-width: 1440px)   {
+                    margin: 0;
+                    width: 31%;
+                }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             margin: 0;
@@ -338,7 +334,6 @@
             margin-right: 0;
         }
         }
-
         .bg-bottom {
             background-color: $bg-secondary;
             width: 100%;

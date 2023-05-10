@@ -206,7 +206,6 @@ center {
   outline: thin dotted invert;
 }
 
-/* Begin bidirectionality settings (do not change) */
 BDO[DIR=ltr] {
   direction: ltr;
   unicode-bidi: bidi-override;
@@ -345,7 +344,7 @@ optgroup select,
 select button,
 select select,
 textarea button,
-textarea select { /* 1 */
+textarea select {
   text-transform: none;
 }
 button button,
@@ -493,8 +492,8 @@ input ::-webkit-file-upload-button,
 optgroup ::-webkit-file-upload-button,
 select ::-webkit-file-upload-button,
 textarea ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  font: inherit;
 }
 button details,
 input details,
