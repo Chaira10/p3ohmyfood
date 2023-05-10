@@ -716,6 +716,10 @@ footer p i {
   border: none;
   width: 111px;
 }
+.localisation .input:focus {
+  outline: none;
+  border: none;
+}
 
 .explorer {
   background-color: #EEEEEE;

@@ -17,6 +17,10 @@
         background-color: $lightgrey;
         border: none;
         width: 111px;
+        &:focus {
+            outline: none;
+            border: none;
+        }
     }
 }
 
